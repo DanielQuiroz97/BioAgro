@@ -1,0 +1,206 @@
+]0;/home/daniel/Dropbox/U/Sexto_Semestre/BIoagro/Rdaniel@Daniel:~/Dropbox/U/Sexto_Semestre/BIoagro/R$ R
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+Bioconductor version 3.6 (BiocInstaller 1.28.0), ?biocLite for help
+Hi Daniel, welcome to R!
+> DATA)=[K[K[K[K[K[Kdata)=[K[K*([K[K()p)o)l)l)u)t)a)n)t)
+Warning message:
+In data(pollutant) : data set ‘pollutant’ not found
+> su
+Error: object 'su' not found
+> fa[K[K
+Save workspace image? [y/n/c]: n
+]0;/home/daniel/Dropbox/U/Sexto_Semestre/BIoagro/Rdaniel@Daniel:~/Dropbox/U/Sexto_Semestre/BIoagro/R$ su
+Password: 
+]0;/home/daniel/Dropbox/U/Sexto_Semestre/BIoagro/Rroot@Daniel:/home/daniel/Dropbox/U/Sexto_Semestre/BIoagro/R# R
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> install.packages()')')p')i')d')
+Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘BsMD’, ‘conf.design’, ‘numbers’, ‘FrF2’, ‘DoE.base’
+
+trying URL 'https://cloud.r-project.org/src/contrib/BsMD_2013.0718-1.tar.gz'
+Content type 'application/x-gzip' length 402653 bytes (393 KB)
+==================================================
+downloaded 393 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/conf.design_2.0.0.tar.gz'
+Content type 'application/x-gzip' length 8093 bytes
+==================================================
+downloaded 8093 bytes
+
+trying URL 'https://cloud.r-project.org/src/contrib/numbers_0.6-6.tar.gz'
+Content type 'application/x-gzip' length 32496 bytes (31 KB)
+==================================================
+downloaded 31 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/FrF2_1.7-2.tar.gz'
+Content type 'application/x-gzip' length 282582 bytes (275 KB)
+==================================================
+downloaded 275 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/DoE.base_0.32.tar.gz'
+Content type 'application/x-gzip' length 570377 bytes (557 KB)
+==================================================
+downloaded 557 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/pid_0.36.tar.gz'
+Content type 'application/x-gzip' length 1636763 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+* installing *source* package ‘BsMD’ ...
+** package ‘BsMD’ successfully unpacked and MD5 sums checked
+** libs
+gfortran   -fpic  -g -O2 -fdebug-prefix-map=/home/jranke/git/r-backports/stretch/r-base-3.4.4=. -fstack-protector-strong  -c bsmd.f -o bsmd.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/home/jranke/git/r-backports/stretch/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+g++ -shared -L/usr/lib/R/lib -Wl,-z,relro -o BsMD.so bsmd.o init.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/BsMD/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (BsMD)
+* installing *source* package ‘conf.design’ ...
+** package ‘conf.design’ successfully unpacked and MD5 sums checked
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (conf.design)
+* installing *source* package ‘numbers’ ...
+** package ‘numbers’ successfully unpacked and MD5 sums checked
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (numbers)
+* installing *source* package ‘DoE.base’ ...
+** package ‘DoE.base’ successfully unpacked and MD5 sums checked
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (DoE.base)
+* installing *source* package ‘FrF2’ ...
+** package ‘FrF2’ successfully unpacked and MD5 sums checked
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (FrF2)
+* installing *source* package ‘pid’ ...
+** package ‘pid’ successfully unpacked and MD5 sums checked
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded
+* DONE (pid)
+
+The downloaded source packages are in
+	‘/tmp/RtmpZG9AVn/downloaded_packages’
+> library()p)i)d)
+Loading required package: ggplot2
+Loading required package: png
+Loading required package: FrF2
+Loading required package: DoE.base
+Loading required package: grid
+Loading required package: conf.design
+
+Attaching package: ‘DoE.base’
+
+The following objects are masked from ‘package:stats’:
+
+    aov, lm
+
+The following object is masked from ‘package:graphics’:
+
+    plot.design
+
+The following object is masked from ‘package:base’:
+
+    lengths
+
+> data()p)o)l)l)u)t)a)n)t)s)
+Warning message:
+In data(pollutants) : data set ‘pollutants’ not found
+> data()p)o)l)l)u)t)a)n)t)
+> pollutant
+   C  T  S  y
+1 -1 -1 -1  5
+2  1 -1 -1 30
+3 -1  1 -1  6
+4  1  1 -1 33
+5 -1 -1  1  4
+6  1 -1  1  3
+7 -1  1  1  5
+8  1  1  1  4
+> str()p)o)l)l)u)t)a)n)t)
+'data.frame':	8 obs. of  4 variables:
+ $ C: num  -1 1 -1 1 -1 1 -1 1
+ $ T: num  -1 -1 1 1 -1 -1 1 1
+ $ S: num  -1 -1 -1 -1 1 1 1 1
+ $ y: num  5 30 6 33 4 3 5 4
+ - attr(*, "out.attrs")=List of 2
+  ..$ dim     : Named int  2 2 2
+  .. ..- attr(*, "names")= chr  "C" "T" "S"
+  ..$ dimnames:List of 3
+  .. ..$ C: chr  "C=-1" "C= 1"
+  .. ..$ T: chr  "T=-1" "T= 1"
+  .. ..$ S: chr  "S=-1" "S= 1"
+> [K> 

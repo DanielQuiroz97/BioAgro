@@ -1,0 +1,19 @@
+[0mMicrosoft Windows [Versión 6.1.7601][0K[?25l
+Copyright (c) 2009 Microsoft Corporation. Reservados todos los derechos.[0K
+[0K
+C[0K[?25lG:\BIoagro\R>[0K[?25hr[0K[16G[15G[?25lG:\BIoagro\R>[0K[?25hR[0K[16G[?25lG:\BIoagro\R>R C[0K[?25hM[0KD[0K[20G[?25lG:\BIoagro\R>R CMD I[0K[?25hN[0KS[0KT[0KA[0KL[0KL[0K[28G[?25lG:\BIoagro\R>R CMD INSTALL d[0K[?25ha[0Kt[0Ka.table_1.10.4-3.tar.gz[0K]0;  - R  CMD INSTALL data.table_1.10.4-3.tar.gz[?25l
+[0K[?25hIn R CMD INSTALL[0K[?25l
+[0K[?25h* installing to library 'C:/Users/Daniel/Documents/R/win-library/3.5'[0K[?25l
+* installing *source* package 'data.table' ...[0K
+[0K[?25h** package 'data.table' successfully unpacked and MD5 sums checked[0K[?25l
+[0K[?25h** libs[0K[?25l
+Warning in system(cm[0K[?25hd) : 'make' not found[0K[?25l
+ERROR: compilation failed for package 'data.table'[0K
+* removing 'C:/Users/Daniel/Documents/R/win-library/3.5/data.table'[0K
+[0K[?25h]0; [?25l
+G:\BIoagro\R>[0K[?25h^V[0K[?25lG:\BIoagro\R>[0K[?25h^V[0K[?25lG:\BIoagro\R>[0K[?25hr[0K[?25lG:\BIoagro\R>[0K[?25hR[0K[16G[?25lG:\BIoagro\R>R C[0K[?25hM[0KD[0K[20G[19G[?25lG:\BIoagro\R>R CM[0K[?25h[?25lG:\BIoagro\R>R C[0K[?25hM[0KD[0K[20G[?25lG:\BIoagro\R>R CMD b[0K[?25hu[0Ki[0Kl[0Kd[0K[26G[?25lG:\BIoagro\R>R CMD build -[0K[?25h-[0Kb[0Ki[0Kn[0Ka[0Kr[0Ky[0K[35G[?25lG:\BIoagro\R>R CMD build --binary d[0K[?25ha[0Kt[0Ka.table_1.10.4-3.tar.gz[0K]0;  - R  CMD build --binary data.table_1.10.4-3.tar.gz[?25l
+[0K[?25hWarning: unknown option '--binary'[0K[?25l
+ ERROR[0K
+cannot change to directory 'data.table_1.10.4-3.tar.gz'[0K
+[0K[?25h]0; [?25l
+G:\BIoagro\R>[0K[?25h

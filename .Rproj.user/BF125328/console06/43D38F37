@@ -1,0 +1,9 @@
+]0;/home/quiroz/Documents/BioAgro]0;quiroz@daniel: ~/Documents/BioAgro[01;32mquiroz@daniel[00m:[01;34m~/Documents/BioAgro[00m$ [K]0;quiroz@daniel: ~/Documents/BioAgro[01;32mquiroz@daniel[00m:[01;34m~/Documents/BioAgro[00m$ mkdir plots
+]0;/home/quiroz/Documents/BioAgro]0;quiroz@daniel: ~/Documents/BioAgro[01;32mquiroz@daniel[00m:[01;34m~/Documents/BioAgro[00m$ mv *png plots/
+]0;/home/quiroz/Documents/BioAgro]0;quiroz@daniel: ~/Documents/BioAgro[01;32mquiroz@daniel[00m:[01;34m~/Documents/BioAgro[00m$ mkdr data
+bash: mkdr: command not found
+]0;/home/quiroz/Documents/BioAgro]0;quiroz@daniel: ~/Documents/BioAgro[01;32mquiroz@daniel[00m:[01;34m~/Documents/BioAgro[00m$ mkdr data[1@i
+]0;/home/quiroz/Documents/BioAgro]0;quiroz@daniel: ~/Documents/BioAgro[01;32mquiroz@daniel[00m:[01;34m~/Documents/BioAgro[00m$ mv 9[K*xlsx data/
+]0;/home/quiroz/Documents/BioAgro]0;quiroz@daniel: ~/Documents/BioAgro[01;32mquiroz@daniel[00m:[01;34m~/Documents/BioAgro[00m$ mv colada.csv ad[K[Kdata/
+]0;/home/quiroz/Documents/BioAgro]0;quiroz@daniel: ~/Documents/BioAgro[01;32mquiroz@daniel[00m:[01;34m~/Documents/BioAgro[00m$ mv TABLAS\ DE\ PROTEINA\ Y\ FIBRA\ MQAG.docx data/
+]0;/home/quiroz/Documents/BioAgro]0;quiroz@daniel: ~/Documents/BioAgro[01;32mquiroz@daniel[00m:[01;34m~/Documents/BioAgro[00m$ 

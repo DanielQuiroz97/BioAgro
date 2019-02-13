@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1524753483152.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2194717639",
+    "id" : "A21DD08A",
+    "lastKnownWriteTime" : 1524754512,
+    "last_content_update" : 1524754512345,
+    "path" : "G:/BIoagro/R/Functions.R",
+    "project_path" : "Functions.R",
+    "properties" : {
+        "cursorPosition" : "7,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

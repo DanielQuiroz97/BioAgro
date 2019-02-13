@@ -1,0 +1,71 @@
+# This code is the adaptation of the book
+# Discovering statistics with R
+
+# Load Needed Packages
+library('tidyverse')
+library('magrittr')
+library('xlsx')
+library('car')
+library('pid')
+library('gridExtra')
+# Read common data struccture
+readData <- function(sheetID) {
+  data <- read.xlsx('Experimental_Design.xlsx', sheetName = sheetID)
+  # Select Needed column and change data structure
+   data %<>% select(-Tratamiento, -Yates) %>%
+    transmute(Tr = factor(A), t = factor(B), 
+              Tg = factor(C), Respuesta = Respuesta)
+   data
+}
+
+### Factorial Analyis ####
+# This function computa factorial design by changing the plant name
+fact_desing <- function(plant = 'Maiz', kind = 'f') {
+  # Read data
+  sheet <- paste(plant, kind, sep = '_')
+  data_f <- readData(sheet)
+  # Anova as regression model
+  data_aov <- aov(Respuesta~Tr*t*Tg, data_f)
+  cat(paste0('Factorial design, two levels three factors for: \n',
+             ifelse(kind == 'f', 'fiber ', 'protein '), 'of', 
+             plant, '\n \n'))
+  # Anova table of the previos model
+  aov_table <- Anova(data_aov, type = 'III')
+
+  aov_table
+}
+
+### Pareto Char ####
+make_3pareto <- function(plant, kind) {
+  sheet <- paste(plant, kind, sep = '_')
+  data <- readData(sheet)
+  mod_full <- lm(Respuesta~Tr*t*Tg, data = data)
+  gg_pareto <- paretoPlot(mod_full) 
+  gg_pareto
+}
+
+arrangePareto <- function(paretoPlots) {
+  paretoPlots[[1]]  <- paretoPlots[[1]] + ggtitle('A') + 
+    xlab('') + ylab('') + guides(fill = F)
+  paretoPlots[[2]]  <- paretoPlots[[2]] + ggtitle('B') + 
+    xlab('') + ylab('')+ guides(fill = F)
+  paretoPlots[[3]]  <- paretoPlots[[3]] + ggtitle('C') +
+    xlab('') + ylab('')+ guides(fill = F)
+  
+  finalPlot <- grid.arrange(paretoPlots[[1]], paretoPlots[[2]],
+                            paretoPlots[[3]], nrow = 1, 
+                            left =  'Nombre del efecto', 
+                            bottom = 'Magnitud del efecto')
+  finalPlot
+}
+
+desingPlot <- function(plant, kind) {
+  sheet <- paste(plant, kind, sep = '_')
+  data <- readData(sheet)
+  plot.design(Respuesta~Tr*t*Tg, data = data, 
+              xlab = 'Factores', 
+              ylab = ifelse(kind == 'f', 'Contenido de fibra',
+                            'Contenido de proteína (%)'))
+}
+
+
