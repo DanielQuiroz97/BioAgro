@@ -10,7 +10,7 @@ library('pid')
 library('gridExtra')
 # Read common data struccture
 readData <- function(sheetID) {
-  data <- read.xlsx('Experimental_Design.xlsx', sheetName = sheetID)
+  data <- read.xlsx('data/Experimental_Design.xlsx', sheetName = sheetID)
   # Select Needed column and change data structure
    data %<>% select(-Tratamiento, -Yates) %>%
     transmute(Tr = factor(A), t = factor(B), 

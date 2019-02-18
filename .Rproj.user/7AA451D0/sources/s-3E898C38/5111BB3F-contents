@@ -9,7 +9,7 @@ fact_desing('Maiz', 'p')
 # For protein
 paret_3plantP <- lapply(c('Quinoa', 'Maiz', 'Amaranto'), make_3pareto, 'p')
 pareto_p <- arrangePareto(paret_3plantP)
-ggsave('pareto.png', pareto_p, width = 8, height = 3.5, 
+ggsave('plots/pareto.png', pareto_p, width = 8, height = 3.5, 
        units = 'in', dpi = 600)
 
 # for fiber
